@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'DS Icons CRM3';
+    src: url('./DSIcons-CRM3/DSIcons-CRM3.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Generic Styles */
+
+body {
+    box-sizing: border-box;
+    background-color: #DFE3E7;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.icon {
+    font-family: 'DS Icons CRM3';
+    font-size: 20px;
+    color: #88929C;
+}
+
+.header, .actions, .grid {
+    margin-top: 120px;
+}
+
+/* Header */
+
+header {
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    /* align-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle .icon {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+/* Grid Styles */
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: right;
+    background-color: #DFE3E7;
+    padding: 24px;
+    font-size: 16px;
+    max-width: 1200px;
+    width: 800px;
+    margin: auto;
+}
+
+tr > :first-child {
+    display: flex;
+    align-items: center;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+th {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+
+/* Grid Styles */
+
+.actions {
+    background-color: #fff;
+    align-content: center;
+    height: 90px;
+}
+
+.action-container {
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-left {
+    background-color: #DFE3E7;
+    width: 170px;
+    height: 36px;
+    padding: 8px 8px 8px 16px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.action-right {
+    background-color: #DFE3E7;
+    width: 169px;
+    height: 36px;
+    padding: 8px 16px 8px 12px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Fields Styles */
+
+.fields {
+    background-color: #fff;
+    height: 304px;
+    margin: 120px auto;
+    padding: 14px;
+    max-width: 600px;
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    max-width: 250px;
+}
+
+.field span {
+    color: #6F7882;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.field .icon {
+    color: #6F7882;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.content > :first-child {
+    color: #0079D1;
+}
