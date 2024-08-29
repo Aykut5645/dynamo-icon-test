@@ -180,10 +180,6 @@ th:first-child {
     gap: 4px;
 }
 
-.field-content p {
-    align-content: center;
-}
-
 .field-title {
     font-weight: 600;
     font-size: 20px;
