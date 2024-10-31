@@ -1,6 +1,13 @@
-@font-face {
+/* @font-face {
     font-family: 'DS Icons CRM3';
     src: url('./DSIcons-CRM3/DSIcons-CRM3.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'DSSymbols3-Outline';
+    src: url('./DSSymbols3-Outline.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,8 +27,9 @@ p {
 }
 
 .icon {
-    font-family: 'DS Icons CRM3';
-    font-size: 20px;
+    font-family: 'DSSymbols3-Outline';
+    font-size: 24px;
+    line-height: 100%;
     color: #88929C;
 }
 
@@ -82,6 +90,7 @@ p {
 .action {
     display: flex;
     background-color: #DFE3E7;
+    line-height: 150%;
 }
 
 .action-left {
@@ -90,7 +99,7 @@ p {
 }
 
 .action-right {
-    padding: 8px 16px 8px 12px;
+    padding: 8px 16px 8px 8px;
     border-radius: 0px 20px 20px 0px;
 }
 
@@ -100,6 +109,8 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     align-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 /* Grid */
@@ -111,11 +122,17 @@ p {
     margin: 60px auto;
 }
 
+.grid .icon {
+    line-height: 100%;
+    font-size: 24px;
+}
+
 table {
     text-align: right;
     background-color: #DFE3E7;
     border-collapse: collapse;
     margin: auto;
+    line-height: 150%;
 }
 
 thead {
@@ -133,12 +150,11 @@ tbody tr {
     border-bottom: 1px solid #C1C7CF;
     display: grid;
     grid-template-columns: 3fr 2fr 1fr;
-    gap: 8px;
 }
 
 td,
 th {
-    padding: 7.5px;
+    padding: 8px;
     background-color: #fff;
     align-content: flex-start;
 }
@@ -151,8 +167,15 @@ th p {
 td:first-child,
 th:first-child {
     display: flex;
-    gap: .5px;
     text-align: left;
+}
+
+td:first-child,
+th:first-child {
+    padding-left: 0;
+    display: flex;
+    text-align: left;
+    gap: 8px
 }
 
 /* Fields Styles */
@@ -167,6 +190,7 @@ th:first-child {
 .field {
     display: grid;
     grid-template-columns: 3fr auto auto;
+    align-items: flex-start;
     gap: 20px;
     padding: 12px 0;
 }
@@ -174,31 +198,17 @@ th:first-child {
 .field-content,
 .icons {
     display: flex;
-}
-
-.field-content {
-    gap: 4px;
+    gap: 8px;
 }
 
 .field-title {
     font-weight: 600;
     font-size: 20px;
+    line-height: 120%;
 }
 
 .field-date {
-    padding-top: 4px;
-}
-
-.field span {
-    color: #6F7882;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-.field .icon {
-    color: #6F7882;
-    font-weight: 400;
-    font-size: 24px;
+    line-height: 150%;
 }
 
 .fields .field:nth-child(-n+2) {
