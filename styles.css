@@ -1,13 +1,13 @@
 /* @font-face {
     font-family: 'DS Icons CRM3';
-    src: url('./DSIcons-CRM3/DSIcons-CRM3.woff2') format('woff2');
+    src: url('./fonts/DSIcons-CRM3/DSIcons-CRM3.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 } */
 
 @font-face {
     font-family: 'DSSymbols3-Outline';
-    src: url('./DSSymbols3-Outline.woff') format('woff');
+    src: url('./fonts/DSSymbols3-Outline.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -91,6 +91,7 @@ p {
     display: flex;
     background-color: #DFE3E7;
     line-height: 150%;
+    gap: 8px;
 }
 
 .action-left {
@@ -109,8 +110,6 @@ p {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     align-content: center;
-    padding-left: 8px;
-    padding-right: 8px;
 }
 
 /* Grid */
@@ -120,11 +119,6 @@ p {
     background-color: #fff;
     width: fit-content;
     margin: 60px auto;
-}
-
-.grid .icon {
-    line-height: 100%;
-    font-size: 24px;
 }
 
 table {
